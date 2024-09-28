@@ -1,0 +1,5 @@
+/root/app/user-service/src/main/java/com/example/userservice/repository/UserRepository.java
+/root/app/user-service/src/main/java/com/example/userservice/controller/UserController.java
+/root/app/user-service/src/main/java/com/example/userservice/controller/UserViewController.java
+/root/app/user-service/src/main/java/com/example/userservice/model/User.java
+/root/app/user-service/src/main/java/com/example/userservice/UserServiceApplication.java
