@@ -5,6 +5,7 @@ services:
     build:
       context: ./product-service
       dockerfile: Dockerfile
+    image: ramann123/product-service:latest  # Specify your Docker Hub username here
     ports:
       - "8082:8082"
     environment:
@@ -15,18 +16,19 @@ services:
     build:
       context: ./user-service
       dockerfile: Dockerfile
+    image: ramann123/user-service:latest  # Specify your Docker Hub username here
     ports:
       - "8081:8081"
     environment:
       SPRING_PROFILES_ACTIVE: docker
       SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/userdb
 
-  mongo:
-    image: mongo:latest
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongo-data:/data/db
+#  mongo:
+#   image: mongo:latest
+#   ports:
+#     - "27017:27017"
+#   volumes:
+#     - mongo-data:/data/db
 
-volumes:
-  mongo-data:
+#volumes:
+# mongo-data:
